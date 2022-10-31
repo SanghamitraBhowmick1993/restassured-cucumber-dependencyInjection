@@ -1,0 +1,239 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-31T06:51:12.639Z",
+        "line": 4,
+        "name": "Test API - GET CALL",
+        "description": "",
+        "id": "search-functionality;test-api---get-call",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 661000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "i have an api",
+            "match": {
+              "location": "stepdef.StepDef_GetAPI.i_have_an_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1788000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i hit api with apipath \"/api/users/2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/users/2\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdef.StepDef_GetAPI.i_hit_api_with_product_id_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c200\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat stepdef.StepDef_GetAPI.status_code_is(StepDef_GetAPI.java:50)\r\n\tat ✽.status code is 201(file:///C:/Users/sangb/eclipse-workspace/restassuredcucumber/src/test/resources/features/apigetcall.feature:7)\r\n",
+              "duration": 76000000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdef.StepDef_GetAPI.status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "response has id as 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdef.StepDef_GetAPI.response_has_product_id_as(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "firstname is \"Janet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Janet\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdef.StepDef_GetAPI.firstname_is(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "support text message is \"To keep ReqRes free, contributions towards server costs are appreciated!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"To keep ReqRes free, contributions towards server costs are appreciated!\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdef.StepDef_GetAPI.support_text_message_is(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Search Functionality",
+    "description": "",
+    "id": "search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/apigetcall.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-31T06:51:15.290Z",
+        "line": 4,
+        "name": "Test API - POST CALL",
+        "description": "",
+        "id": "search-functionality;test-api---post-call",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "i have an api",
+            "match": {
+              "location": "stepdef.StepDef_GetAPI.i_have_an_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1036000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i hit api with create path \"/api/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/users\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdef.StepDef_PostAPI.i_hit_api_with_createPath(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdef.StepDef_GetAPI.status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 401000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate response has name as \"testuser\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testuser\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdef.StepDef_PostAPI.response_has_name(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Search Functionality",
+    "description": "",
+    "id": "search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/apipostcall.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
